@@ -1,0 +1,169 @@
+/* --- Sitewide --- */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+}
+
+p,
+li,
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* --- Layout Styles --- */
+
+/* Navigation */
+
+.name {
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+.main-nav {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+/* Layout Containers */
+
+.main-heder {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    color: #222;
+    background: url(../img/cvpc-banner.jpg) center center;
+    background-size: cover;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+    height: 300px;
+}
+
+.headline {
+    font-size: 2.5em;
+    padding: 20px 55px 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px #222;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer {
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+
+/* --- Media Queries --- */
+
+@media (min-width: 769px) {
+
+  body {
+    padding-top: 68px;
+  }
+
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .banner {
+    height: 500px;
+  }
+
+  .headline {
+    font-size: 4em;
+    padding: 90px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .primary,
+    .secondary {
+        width: 50%;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    /* ---- Float clearfix ---- */
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .primary {
+        width: 40%;
+    }
+
+    .secondary,
+    .tertiary {
+        width: 30%;
+    }
+
+}
